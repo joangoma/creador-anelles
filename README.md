@@ -1,50 +1,21 @@
-# React + TypeScript + Vite
+# Sardanes Anelles Creator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web application designed to simplify the creation of **anelles** for **sardanes**, a traditional Catalan dance. This tool helps users easily create, arrange, and manage anelles, enhancing the organization and visualization of dance formations. This app was specifically made for Tarragona Dansa agrupation.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The **Sardanes Anelles Creator** aims to streamline the process of creating *anelles* by allowing users to interactively select participants, organize them into circles, and visualize the final formation. This app can be especially useful for dance organizers, instructors, and participants to prepare before an event.
 
-## Expanding the ESLint configuration
+![alt text](image-1.png)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
 
-- Configure the top-level `parserOptions` property like this:
+- **Responsive Circle Creation**: Generate a primary circle surrounded by smaller circles representing participants.
+- **Customizable Circle Arrangement**: Click on any participant circle to modify its placement or details.
+- **Dynamic Positioning**: Ensures responsive design so that all elements remain visible, regardless of screen size.
+- **Participant Selection**: Easily assign participants to circles using a popup with options.
+- **Real-time Preview**: View the formation as you make changes.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Demo
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+![App Overview](image-placeholder.png)
