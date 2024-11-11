@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import TeamList from './components/TeamList';
 import CircleAssignment from './components/CircleAssignment';
