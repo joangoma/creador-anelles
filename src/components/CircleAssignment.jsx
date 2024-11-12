@@ -14,6 +14,9 @@ const CircleAssignment = () => {
   const containerRef = useRef(null);
   const [parentSize, setParentSize] = useState(0);
 
+  // At the top of CircleAssignment component, with other useState declarations
+  const [currentSize, setCurrentSize] = useState(config.size);
+
   // Update `parentSize` based on the container's current size
   useEffect(() => {
     const updateSize = () => {
@@ -82,9 +85,9 @@ const CircleAssignment = () => {
   };
 
   const applyPreset = (presetNames) => {
-    const newAssignments = [...assignments];
+    const newAssignments = Array(currentSize).fill(null);
     presetNames.forEach((name, index) => {
-      if (index < config.size) {
+      if (index < currentSize) {
         newAssignments[index] = name;
       }
     });
@@ -92,7 +95,7 @@ const CircleAssignment = () => {
   };
 
   const resetAssignments = () => {
-    setAssignments(Array(config.size).fill(null));
+    setAssignments(Array(currentSize).fill(null));
   };
 
 
@@ -113,6 +116,7 @@ const CircleAssignment = () => {
           </div>
         </div>
 
+
         <div className="flex flex-wrap gap-4 justify-center">
           {Object.entries(config.presets).map(([name, preset]) => (
             <button
@@ -129,6 +133,27 @@ const CircleAssignment = () => {
           >
             Reset
           </button>
+
+          <div className="flex items-center gap-4">
+            <label className="text-sm font-medium">Mida de l'anella: </label>
+            <input
+              type="number"
+              min="1"
+              max="12"  // or any reasonable maximum
+              value={currentSize}
+              onChange={(e) => {
+                const newSize = parseInt(e.target.value) || team.size;
+                setCurrentSize(newSize > 12 ? 12 : newSize);
+                // Resize the assignments array, preserving existing assignments
+                const newAssignments = Array(newSize).fill(null).map((_, i) =>
+                  assignments[i] || null
+                );
+                setAssignments(newAssignments);
+              }}
+              className="w-20 px-2 py-1 border rounded-md"
+            />
+          </div>
+
         </div>
 
         <div className="text-sm text-gray-600 text-center">
@@ -137,14 +162,14 @@ const CircleAssignment = () => {
       </div>
 
       <div ref={containerRef} className="relative w-[90vw] h-[90vw] max-w-[400px] max-h-[400px] bg-white rounded-full shadow-lg my-4">
-        {assignments.map((name, index) => (
+        {Array(currentSize).fill(null).map((_, index) => (
           <CirclePosition
             key={index}
             index={index}
-            total={config.size}
-            name={name}
+            total={currentSize}
+            name={assignments[index]}
             onClick={(e) => handleCircleClick(index, e)}
-            color={name ? (index % 2 == 0 ? '#106dc9' : '#189ec7') : '#9CA3AF'}
+            color={assignments[index] ? (index % 2 == 0 ? '#106dc9' : '#189ec7') : '#9CA3AF'}
             parentSize={parentSize} // Pass in the max size for reference
           />
         ))}

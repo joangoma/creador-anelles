@@ -76,7 +76,7 @@ export const TEAMS = {
                 }
             },
             'Sardana 2': {
-                size: 12    ,
+                size: 10    ,
                 members: [
                     'Adrià','Jordi B','Biel','Jordi P','Oriol','Arnau','David','Arnau','Marti','Laia','Aura','Nuria','Montse','Jordina','Blanca','Aran'
                 ],
