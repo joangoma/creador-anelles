@@ -18,4 +18,4 @@ The **Sardanes Anelles Creator** aims to streamline the process of creating *ane
 
 ## Demo
 
-![App Overview](image-placeholder.png)
+Test the demo in: [demo](https://joangoma.github.io/creador-anelles/)
