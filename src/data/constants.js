@@ -45,21 +45,21 @@ export const TEAMS = {
     'Nova Tarragona Dansa': {
         configurations: {
             'Sardana 1': {
-                size: 12,
+                size: 10,
                 members: [
-                    'Lluc', 'Josep', 'Pau', 'Nil', 'Joan', 'Roger', 'Marcel', 'Xavi', 'Mikas', 'Laura', 'Berta1', 'Berta2', 'Laia', 'Ivet', 'Abril', 'Neus',
+                    'Lluc', 'Josep', 'Pau', 'Nil', 'Joan', 'Roger', 'Marcel', 'Xavi', 'Mikas', 'Laura', 'Berta1', 'Berta2', 'Laia', 'Ivet', 'Abril', 'Neus', 'Marina',
                 ],
                 presets: {
-                    'Anella tipica': [''],
+                    'Anella tipica': ['Lluc', 'Laura', 'Joan', 'Ivet', 'Pau', 'Berta2', 'Josep', 'Laia', 'Nil', 'Berta1'],
                 }
             },
             'Sardana 2': {
-                size: 12,
+                size: 10,
                 members: [
-                    'Lluc', 'Josep', 'Pau', 'Nil', 'Joan', 'Roger', 'Marcel', 'Xavi', 'Mikas', 'Laura', 'Berta1', 'Berta2', 'Laia', 'Ivet', 'Abril', 'Neus',
+                    'Lluc', 'Josep', 'Pau', 'Nil', 'Joan', 'Roger', 'Marcel', 'Xavi', 'Mikas', 'Laura', 'Berta1', 'Berta2', 'Laia', 'Ivet', 'Abril', 'Neus', 'Marina',
                 ],
                 presets: {
-                    'Anella tipica': [''],
+                    'Anella tipica': ['Lluc', 'Laura', 'Joan', 'Ivet', 'Pau', 'Berta2', 'Josep', 'Laia', 'Nil', 'Berta1'],
                 }
             },
         }
@@ -91,7 +91,7 @@ export const TEAMS = {
             'Sardana 1': {
                 size: 12,
                 members: [
-                    'Lluc', 'Josep', 'Pau', 'Nil', 'Joan', 'Roger', 'Marcel', 'Xavi', 'Mikas', 'Laura', 'Berta1', 'Berta2', 'Laia', 'Ivet', 'Abril', 'Neus',
+                    'Alfred', 'David', 'Itu', 'Francesc Ll', 'Sandra', 'Carme S.', 'Clara', 'Ester C', 'Esther S', 'Inma', 'Jordi', 'Josep', 'Mercé', 'Mila', 'Montse F', 'Montse M', 'Roberto', 'Rafel', 'Roser', 'Tessa', 'Anna', 'Domenec', 'Francesc G', 'Manel B', 'Marta', 'Carme O', 'Lídia', 'Txell', 'Meritxell A', 'Oscar', 'Marc',
                 ],
                 presets: {
                     'Anella tipica': [''],
@@ -100,7 +100,7 @@ export const TEAMS = {
             'Sardana 2': {
                 size: 12,
                 members: [
-                    'Lluc', 'Josep', 'Pau', 'Nil', 'Joan', 'Roger', 'Marcel', 'Xavi', 'Mikas', 'Laura', 'Berta1', 'Berta2', 'Laia', 'Ivet', 'Abril', 'Neus',
+                    'Alfred', 'David', 'Itu', 'Francesc Ll', 'Sandra', 'Carme S.', 'Clara', 'Ester C', 'Esther S', 'Inma', 'Jordi', 'Josep', 'Mercé', 'Mila', 'Montse F', 'Montse M', 'Roberto', 'Rafel', 'Roser', 'Tessa', 'Anna', 'Domenec', 'Francesc G', 'Manel B', 'Marta', 'Carme O', 'Lídia', 'Txell', 'Meritxell A', 'Oscar', 'Marc',
                 ],
                 presets: {
                     'Anella tipica': [''],
