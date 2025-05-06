@@ -4,40 +4,40 @@ export const TEAMS = {
             'Sardana 1': {
                 size: 12,
                 members: [
-                    'Bernat', 'Magí', 'Joan G', 'Lluc', 'Josep', 'Pau',
-                    'Nil', 'Oscar', 'Sape', 'Marta', 'Martina', 'Jana',
+                    'Pau', 'Nil', 'Oscar', 'Sape', 'Marta', 'Martina', 'Jana',
                     'Mar', 'Laura G', 'Laura A', 'Elia', 'Ares', 'Gisela',
-                    'Marina T', 'Xenia', 'Marina G'
+                    'Marina T', 'Xenia', 'Marina G', 'Laia', 'Núria', 'Alba', 'Júlia',
+                    'Joan G', 'Bernat', 'Magí', 'Lluc', 'Josep', 
                 ],
                 presets: {
-                    'Anella tipica': ['Bernat', 'Marta', 'Magí', 'Martina', 'Josep', 'Jana',
-                        'Lluc', 'Xenia', 'Pau', 'Mar', 'Joan G', 'Marina T'],
+                    'Anella tipica': ['Nil', 'Marta', 'Pau', 'Mar', 'Julia', 'Jana',
+                        'Elia', 'Gis', 'Ares', 'Laia', 'Laureta', 'Xenia'],
                 }
             },
             'Sardana 2': {
                 size: 12,
                 members: [
-                    'Bernat', 'Magí', 'Joan G', 'Lluc', 'Josep', 'Pau',
-                    'Nil', 'Oscar', 'Sape', 'Marta', 'Martina', 'Jana',
+                    'Pau', 'Nil', 'Oscar', 'Sape', 'Marta', 'Martina', 'Jana',
                     'Mar', 'Laura G', 'Laura A', 'Elia', 'Ares', 'Gisela',
-                    'Marina T', 'Xenia', 'Marina G'
+                    'Marina T', 'Xenia', 'Marina G', 'Laia', 'Núria', 'Alba', 'Júlia',
+                    'Joan G', 'Bernat', 'Magí', 'Lluc', 'Josep', 
                 ],
                 presets: {
-                    'Anella tipica': ['Bernat', 'Marta', 'Magí', 'Martina', 'Josep', 'Jana',
-                        'Lluc', 'Xenia', 'Pau', 'Mar', 'Joan G', 'Marina T'],
+                    'Anella tipica': ['Nil', 'Nuria', 'Pau', 'Mar', 'Elia', 'Ares',
+                        'Julia', 'Gis', 'Laura', 'Laia', 'Alba', 'Marina G'],
                 }
             },
             'Sardana 3': {
                 size: 12,
                 members: [
-                    'Bernat', 'Magí', 'Joan G', 'Lluc', 'Josep', 'Pau',
-                    'Nil', 'Oscar', 'Sape', 'Marta', 'Martina', 'Jana',
+                    'Pau', 'Nil', 'Oscar', 'Sape', 'Marta', 'Martina', 'Jana',
                     'Mar', 'Laura G', 'Laura A', 'Elia', 'Ares', 'Gisela',
-                    'Marina T', 'Xenia', 'Marina G'
+                    'Marina T', 'Xenia', 'Marina G', 'Laia', 'Núria', 'Alba', 'Júlia',
+                    'Joan G', 'Bernat', 'Magí', 'Lluc', 'Josep', 
                 ],
                 presets: {
-                    'Anella tipica': ['Bernat', 'Marta', 'Magí', 'Martina', 'Josep', 'Jana',
-                        'Lluc', 'Xenia', 'Pau', 'Mar', 'Joan G', 'Marina T'],
+                    'Anella tipica': ['Jana', 'Laura', 'Xenia', 'Julia', 'Ares', 'Alba',
+                        'Gomis', 'Nil', 'Marta', 'Pau', 'Mar', 'Elia'],
                 }
             }
         }
